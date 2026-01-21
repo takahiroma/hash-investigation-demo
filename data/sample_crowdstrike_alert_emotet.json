@@ -1,0 +1,196 @@
+{
+    "@timestamp": "2023-11-03T18:00:22.328Z",
+    "agent": {
+        "ephemeral_id": "c322e005-c870-4f69-ad13-7ec993efb684",
+        "id": "9892c9f1-5a42-4557-9594-2fb1efe8c2b9",
+        "name": "elastic-agent-25240",
+        "type": "filebeat",
+        "version": "8.18.0"
+    },
+    "crowdstrike": {
+        "alert": {
+            "agent_id": "2ce412d17b334ad4adc8c1c54dbfec4b",
+            "aggregate_id": "aggind:2ce412d17b334ad4adc8c1c54dbfec4b:163208931778",
+            "alleged_filetype": "dll",
+            "cid": "92012896127c4a948236ba7601b886b0",
+            "cloud_indicator": false,
+            "cmdline": "rundll32.exe invoice_may2022.dll,Control_RunDLL",
+            "composite_id": "92012896127c4a8236ba7601b886b0:ind:2ce412d17b334ad4adc8c1c54dbfec4b:399748687993-5761-42627600",
+            "confidence": 80,
+            "context_timestamp": "2023-11-03T18:00:31.000Z",
+            "control_graph_id": "ctg:2ce4127b334ad4adc8c1c54dbfec4b:163208931778",
+            "crawled_timestamp": "2023-11-03T19:00:23.985Z",
+            "created_timestamp": "2023-11-03T18:01:23.995Z",
+            "data_domains": [
+                "Endpoint"
+            ],
+            "description": "Emotet banking trojan detected via behavioral analysis. Known IOC from DFIR Report.",
+            "device": {
+                "agent_load_flags": 0,
+                "agent_local_time": "2023-10-12T03:45:57.753Z",
+                "agent_version": "7.04.17605.0",
+                "bios_manufacturer": "ABC",
+                "bios_version": "F8CN42WW(V2.05)",
+                "cid": "92012896127c4a948236ba7601b886b0",
+                "config_id_base": "65994763",
+                "config_id_build": "17605",
+                "config_id_platform": 3,
+                "external_ip": "81.2.69.142",
+                "first_seen": "2023-04-07T09:36:36.000Z",
+                "groups": [
+                    "18704e21288243b58e4c76266d38caaf"
+                ],
+                "hostinfo": {
+                    "active_directory_dn_display": [
+                        "WinComputers",
+                        "WinComputers\\ABC"
+                    ],
+                    "domain": "ABC.LOCAL"
+                },
+                "hostname": "ABC709-1175",
+                "id": "2ce412d17b334ad4adc8c1c54dbfec4b",
+                "last_seen": "2023-11-03T17:51:42.000Z",
+                "local_ip": "81.2.69.142",
+                "mac_address": "AB-21-48-61-05-B2",
+                "machine_domain": "ABC.LOCAL",
+                "major_version": "10",
+                "minor_version": "0",
+                "modified_timestamp": "2023-11-03T17:53:43.000Z",
+                "os_version": "Windows11",
+                "ou": [
+                    "ABC",
+                    "WinComputers"
+                ],
+                "platform_id": "0",
+                "platform_name": "Windows",
+                "product_type": "1",
+                "product_type_desc": "Workstation",
+                "site_name": "Default-First-Site-Name",
+                "status": "normal",
+                "system_manufacturer": "LENOVO",
+                "system_product_name": "20VE"
+            },
+            "falcon_host_link": "https://falcon.us-2.crowdstrike.com/activity-v2/detections/dhjffg:ind:2ce412d17b334ad4adc8c1c54dbfec4b:399748687993-5761-42627600",
+            "filename": "invoice_may2022.dll",
+            "filepath": "\\Device\\HarddiskVolume3\\Users\\yuvraj.mahajan\\AppData\\Local\\Temp\\invoice_may2022.dll",
+            "grandparent_details": {
+                "cmdline": "\"C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE\" /e \"C:\\Users\\yuvraj.mahajan\\Downloads\\info_1805.xls\"",
+                "filename": "info_1805.xls",
+                "filepath": "\\Device\\HarddiskVolume3\\Users\\yuvraj.mahajan\\Downloads\\info_1805.xls",
+                "local_process_id": "4328",
+                "md5": "acd3d4e8f63f52eaf57467a76ca2389d",
+                "process_graph_id": "pid:2ce412d17b334ad4adc8c1c54dbfec4b:392734873135",
+                "process_id": "392734873135",
+                "sha256": "e598b9700e13f2cb1c30c6d9230152ed5716a6d6e25db702576fefeb6638005e",
+                "timestamp": "2023-10-30T16:49:19.000Z",
+                "user_graph_id": "uid:2ce412d17b334ad4adc8c1c54dbfec4b:S-1-5-21-1909377054-3469629671-4104191496-4425",
+                "user_id": "S-1-5-21-1909377054-3469629671-4104191496-4425",
+                "user_name": "yuvraj.mahajan"
+            },
+            "has_script_or_module_ioc": true,
+            "id": "ind:2ce412d17b334ad4adc8c1c54dbfec4b:399748687993-5761-42627600",
+            "indicator_id": "ind:2ce412d17b334ad4adc8c1c54dbfec4b:399748687993-5761-42627600",
+            "ioc_context": [
+                {
+                    "ioc_description": "\\Device\\HarddiskVolume3\\Users\\yuvraj.mahajan\\AppData\\Local\\Temp\\invoice_may2022.dll",
+                    "ioc_source": "library_load",
+                    "ioc_type": "hash_sha256",
+                    "ioc_value": "2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df",
+                    "md5": "e984f812689ec7af136a151a19b2d56c",
+                    "sha256": "2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df",
+                    "type": "module"
+                }
+            ],
+            "ioc_values": [
+                "2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df"
+            ],
+            "is_synthetic_quarantine_disposition": true,
+            "local_process_id": "17076",
+            "logon_domain": "ABSYS",
+            "md5": "e984f812689ec7af136a151a19b2d56c",
+            "name": "EmotetTrojanDetection",
+            "objective": "FalconDetectionMethod",
+            "parent_details": {
+                "cmdline": "C:\\Windows\\System32\\rundll32.exe UOmCgbXygCe.exe,Control_RunDLL",
+                "filename": "UOmCgbXygCe.exe",
+                "filepath": "\\Device\\HarddiskVolume3\\Users\\yuvraj.mahajan\\AppData\\Local\\Temp\\UOmCgbXygCe.exe",
+                "local_process_id": "1040",
+                "md5": "592155bbbab05ac1f818cfd9eb53b672",
+                "process_graph_id": "pid:2ce412d17b334ad4adc8c1c54dbfec4b:392736520876",
+                "process_id": "392736520876",
+                "sha256": "f4c085ef1ba7e78a17a9185e4d5e06163fe0e39b6b0dc3088b4c1ed11c0d726b",
+                "timestamp": "2023-11-03T18:00:32.000Z",
+                "user_graph_id": "uid:2ce412d17b334ad4adc8c1c54dbfec4b:S-1-5-21-1909377054-3469629671-4104191496-4425",
+                "user_id": "S-1-5-21-1909377054-3469629671-4104191496-4425",
+                "user_name": "mohit.jha"
+            },
+            "parent_process_id": "392736520876",
+            "pattern_disposition": 2176,
+            "pattern_disposition_description": "Prevention/Quarantine, process was blocked from execution and quarantine was attempted.",
+            "pattern_disposition_details": {
+                "blocking_unsupported_or_disabled": false,
+                "bootup_safeguard_enabled": false,
+                "critical_process_disabled": false,
+                "detect": false,
+                "fs_operation_blocked": false,
+                "handle_operation_downgraded": false,
+                "inddet_mask": false,
+                "indicator": false,
+                "kill_action_failed": false,
+                "kill_parent": false,
+                "kill_process": false,
+                "kill_subprocess": false,
+                "operation_blocked": false,
+                "policy_disabled": false,
+                "process_blocked": true,
+                "quarantine_file": true,
+                "quarantine_machine": false,
+                "registry_operation_blocked": false,
+                "rooting": false,
+                "sensor_only": false,
+                "suspend_parent": false,
+                "suspend_process": false
+            },
+            "pattern_id": "5761",
+            "platform": "Windows",
+            "poly_id": "AACSASiWEnxKlIIaw8LWC-8XINBatE2uYZaWqRAAATiEEfPFwhoY4opnh1CQjm0tvUQp4Lu5eOAx29ZVj-qrGrA==",
+            "process_end_time": "2023-11-03T18:00:21.000Z",
+            "process_id": "399748687993",
+            "process_start_time": "2023-11-03T18:00:13.000Z",
+            "product": "epp",
+            "quarantined_files": [
+                {
+                    "filename": "\\Device\\HarddiskVolume3\\Users\\yuvraj.mahajan\\AppData\\Local\\Temp\\invoice_may2022.dll",
+                    "id": "2ce412d17b334ad4adc8c1c54dbfec4b_2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df",
+                    "sha256": "2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df",
+                    "state": "quarantined"
+                }
+            ],
+            "scenario": "NGAV",
+            "severity": 70,
+            "severity_name": "high",
+            "sha1": "0000000000000000000000000000000000000000",
+            "sha256": "2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df",
+            "show_in_ui": true,
+            "source_products": [
+                "FalconInsight"
+            ],
+            "source_vendors": [
+                "CrowdStrike"
+            ],
+            "status": "new",
+            "tactic": "Execution",
+            "tactic_id": "TA0002",
+            "technique": "Command and Scripting Interpreter",
+            "technique_id": "T1059",
+            "timestamp": "2023-11-03T18:00:22.328Z",
+            "tree_id": "1931778",
+            "tree_root": "38687993",
+            "triggering_process_graph_id": "pid:2ce4124ad4adc8c1c54dbfec4b:399748687993",
+            "type": "ldt",
+            "updated_timestamp": "2023-11-03T19:00:23.985Z",
+            "user_id": "S-1-5-21-1909377054-3469629671-4104191496-4425",
+            "user_name": "mohit.jha"
+        }
+    }
+}
