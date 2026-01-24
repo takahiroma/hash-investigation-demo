@@ -1,0 +1,7 @@
+﻿alert,incident_id,source
+EDR Alert: Suspicious file detected with hash 569a267a4282bc694a8b39502b4e51bd3b78d449e075f4480c51eba71433b5dd dropped to C:\\Windows\\Temp\\,INC-001,EDR
+SIEM: File hash d123b2e7a6e9252b1cb3b86a6f8f107206c31cc666a74af97738f46b650ed4c4 seen in network traffic from 192.168.1.100,INC-002,SIEM
+Alert: Process created file with hash 275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f,INC-003,EDR
+Turla_Copyright_String_Test:ef56bbe29919b042f36ddd784a6cd361d79766e7d492adea255ad96f518550a0,INC-004,EDR
+HiddenCobra_Wrong_Copyright_String:24d54ef11d96eecd3de42f6a4385a66508968c825f03524bc51e897253d65193/subfile,INC-005,SIEM
+WannaCry:ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa,INC-006,EDR
