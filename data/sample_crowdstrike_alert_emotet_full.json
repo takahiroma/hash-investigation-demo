@@ -24,7 +24,7 @@
             "data_domains": [
                 "Endpoint"
             ],
-            "description": "Emotet banking trojan detected via behavioral analysis. Malware downloaded payload from https://marcialong.alwaysdata.net/WindowUpdate.msi and established C2 connection to bardubar.com (45.33.32.156). Known IOC from DFIR Report.",
+            "description": "Emotet banking trojan detected via behavioral analysis. C2 communication and payload download observed.",
             "device": {
                 "agent_load_flags": 0,
                 "agent_local_time": "2023-10-12T03:45:57.753Z",
@@ -95,9 +95,9 @@
                     "ioc_description": "\\Device\\HarddiskVolume3\\Users\\yuvraj.mahajan\\AppData\\Local\\Temp\\invoice_may2022.dll",
                     "ioc_source": "library_load",
                     "ioc_type": "hash_sha256",
-                    "ioc_value": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
-                    "md5": "44d88612fea8a8f36de82e1278abb02f",
-                    "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+                    "ioc_value": "2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df",
+                    "md5": "e984f812689ec7af136a151a19b2d56c",
+                    "sha256": "2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df",
                     "type": "module"
                 },
                 {
@@ -123,7 +123,7 @@
                 }
             ],
             "ioc_values": [
-                "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+                "2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df",
                 "45.33.32.156",
                 "bardubar.com",
                 "https://marcialong.alwaysdata.net/WindowUpdate.msi"
@@ -162,7 +162,7 @@
             "is_synthetic_quarantine_disposition": true,
             "local_process_id": "17076",
             "logon_domain": "ABSYS",
-            "md5": "44d88612fea8a8f36de82e1278abb02f",
+            "md5": "e984f812689ec7af136a151a19b2d56c",
             "name": "EmotetTrojanDetection",
             "objective": "FalconDetectionMethod",
             "parent_details": {
@@ -216,16 +216,16 @@
             "quarantined_files": [
                 {
                     "filename": "\\Device\\HarddiskVolume3\\Users\\yuvraj.mahajan\\AppData\\Local\\Temp\\invoice_may2022.dll",
-                    "id": "2ce412d17b334ad4adc8c1c54dbfec4b_275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
-                    "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+                    "id": "2ce412d17b334ad4adc8c1c54dbfec4b_2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df",
+                    "sha256": "2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df",
                     "state": "quarantined"
                 }
             ],
             "scenario": "NGAV",
             "severity": 70,
             "severity_name": "high",
-            "sha1": "3395856ce81f2b7382dee72602f798b642f14140",
-            "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+            "sha1": "0000000000000000000000000000000000000000",
+            "sha256": "2b2e00ed89ce6898b9e58168488e72869f8e09f98fecb052143e15e98e5da9df",
             "show_in_ui": true,
             "source_products": [
                 "FalconInsight"
