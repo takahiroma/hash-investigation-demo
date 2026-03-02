@@ -1,5 +1,5 @@
 {
-    "@timestamp": "2023-11-03T18:00:22.328Z",
+    "@timestamp": "2024-11-03T18:00:22.328Z",
     "agent": {
         "ephemeral_id": "c322e005-c870-4f69-ad13-7ec993efb684",
         "id": "9892c9f1-5a42-4557-9594-2fb1efe8c2b9",
@@ -92,7 +92,7 @@
             "indicator_id": "ind:2ce412d17b334ad4adc8c1c54dbfec4b:399748687993-5761-42627600",
             "ioc_context": [
                 {
-                    "ioc_description": "\\Device\\HarddiskVolume3\\Users\\yuvraj.mahajan\\AppData\\Local\\Temp\\Temp3cc4c329-2896-461f-9dea-88009eb2e8fb_pfSen\nseFirewallOpenVPNClients-20230823T120504Z-001.zip\\pfSenseFirewallOpenVPNClients\\Windows\\openvpn-cds-pfSense-UDP4-119\n4-pfsense-install-2.6.5-I001-amd64.exe",
+                    "ioc_description": "\\Device\\HarddiskVolume3\\Users\\yuvraj.mahajan\\AppData\\Local\\Temp\\Temp3cc4c329-2896-461f-9dea-88009eb2e8fb_pfSenseFirewallOpenVPNClients-20230823T120504Z-001.zip\\pfSenseFirewallOpenVPNClients\\Windows\\openvpn-cds-pfSense-UDP4-1194-pfsense-install-2.6.5-I001-amd64.exe",
                     "ioc_source": "library_load",
                     "ioc_type": "hash_sha256",
                     "ioc_value": "b26a6791b72753d2317efd5e1363d93fdd33e611c8b9e08a3b24ea4d755b81fd",
@@ -160,7 +160,7 @@
             "product": "epp",
             "quarantined_files": [
                 {
-                    "filename": "\\Device\\Volume3\\Users\\yuvraj.mahajan\\AppData\\Local\\Temp\\Temp3cc4c329-2896-461f-9dea-88009eb2e8fb_pfSenseFirewa\nllOpenVPNClients-20230823T120504Z-001.zip\\pfSenseFirewallOpenVPNClients\\Windows\\openvpn-cds-pfSense-UDP4-1194-pfsens\ne-install-2.6.5-I001-amd64.exe",
+                    "filename": "\\Device\\Volume3\\Users\\yuvraj.mahajan\\AppData\\Local\\Temp\\Temp3cc4c329-2896-461f-9dea-88009eb2e8fb_pfSenseFirewallOpenVPNClients-20230823T120504Z-001.zip\\pfSenseFirewallOpenVPNClients\\Windows\\openvpn-cds-pfSense-UDP4-1194-pfsense-install-2.6.5-I001-amd64.exe",
                     "id": "2ce412d17b334ad4adc8c1c54dbfec4b_b26a6791b72753d2317efd5e1363d93fdd33e611c8b9e08a3b24ea4d755b81fd",
                     "sha256": "b26a6791b72753d2317efd5e1363d93fdd33e611c8b9e08a3b24ea4d755b81fd",
                     "state": "quarantined"
